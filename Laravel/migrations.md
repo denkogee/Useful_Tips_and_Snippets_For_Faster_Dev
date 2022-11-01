@@ -327,8 +327,13 @@ Schema::create('posts', function (Blueprint $table) {
 });
 ```
 
+Tip given by [@iamgurmandeep](https://twitter.com/iamgurmandeep/status/1517152425748148225)
+
+
 
 ### Migrate Specific File(s) from Migrations
 ```php
 php artisan migrate:refresh --path=/database/migrations/fileName.php
 ```
+
+Tip given by Me
