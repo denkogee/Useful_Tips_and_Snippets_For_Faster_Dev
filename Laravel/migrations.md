@@ -19,6 +19,7 @@
   - [Group Columns within an After Method](#group-columns-within-an-after-method)
   - [Add the column in the database table only if it's not present & can drop it if, its present](#add-the-column-in-the-database-table-only-if-its-not-present--can-drop-it-if-its-present)
   - [Method to set the default value for current timestamp](#method-to-set-the-default-value-for-current-timestamp)
+  - [Migrate Specific File(s) from Migrations](#migrate-specific-files-from-migrations)
 
 ### Unsigned Integer
 
@@ -326,4 +327,8 @@ Schema::create('posts', function (Blueprint $table) {
 });
 ```
 
-Tip given by [@iamgurmandeep](https://twitter.com/iamgurmandeep/status/1517152425748148225)
+
+### Migrate Specific File(s) from Migrations
+```php
+php artisan migrate:refresh --path=/database/migrations/fileName.php
+```
